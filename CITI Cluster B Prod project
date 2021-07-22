@@ -1,0 +1,44 @@
+<dependency>
+    <groupId>com.amazonaws</groupId>
+    <artifactId>aws-lambda-java-core</artifactId>
+    <version>1.1.0</version>
+</dependency>
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-shade-plugin</artifactId>
+    <version>2.4.3</version>
+    <configuration>
+        <createDependencyReducedPom>false</createDependencyReducedPom>
+    </configuration>
+    <executions>
+        <execution>
+            <phase>package</phase>
+	    <goals>
+                <goal>shade</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+public class LambdaMethodHandler {
+    public String handleRequest(String input, Context context) {
+        context.getLogger().log("Input: " + input);
+        return "Hello World - " + input;
+    }
+}
+public class LambdaRequestHandler
+  implements RequestHandler<String, String> {
+    public String handleRequest(String input, Context context) {
+        context.getLogger().log("Input: " + input);
+        return "Hello World - " + input;
+    }
+}
+public class LambdaRequestStreamHandler
+  implements RequestStreamHandler {
+    public void handleRequest(InputStream inputStream, 
+      OutputStream outputStream, Context context) {
+        String input = IOUtils.toString(inputStream, "UTF-8");
+        outputStream.write(("Hello World - " + input).getBytes());
+    }
+}
+mvn clean package shade:shade
+"Hello World - Virtusa Citi Cluster B ODC"
