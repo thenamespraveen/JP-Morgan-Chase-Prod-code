@@ -1,0 +1,85 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    double number, squareRoot;
+    cout << "Enter a number: ";
+    cin >> number;
+
+    // sqrt() is a library function to calculate square root
+    squareRoot = sqrt(number);
+    cout << "Square root of " << number << " = " << squareRoot;
+    return 0;
+}
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    double number, squareRoot;
+    cout << "Enter a number: ";
+    cin >> number;
+
+    // sqrt() is a library function to calculate square root
+    squareRoot = sqrt(number);
+    cout << "Square root of " << number << " = " << squareRoot;
+    return 0;
+} 
+
+
+\bJSONObject\b
+\bscript language\b
+\bdemjson\b
+\brequire 'rubygems'\b
+\bActiveXObject\b
+\brequire 'json'\b
+\bXMLHttpRequest\b
+
+\bJSONObject\b
+\bscript language\b
+\bdemjson\b
+\brequire 'rubygems'\b
+\bActiveXObject\b
+\brequire 'json'\b
+\bXMLHttpRequest\b
+
+
+\bJSONObject\b
+\bscript language\b
+\bdemjson\b
+\brequire 'rubygems'\b
+\bActiveXObject\b
+\brequire 'json'\b
+\bXMLHttpRequest\b
+
+
+\bJSONObject\b
+\bscript language\b
+\bdemjson\b
+\brequire 'rubygems'\b
+\bActiveXObject\b
+\brequire 'json'\b
+\bXMLHttpRequest\b
+
+
+\bJSONObject\b
+\bscript language\b
+\bdemjson\b
+\brequire 'rubygems'\b
+\bActiveXObject\b
+\brequire 'json'\b
+\bXMLHttpRequest\b
+
+
+\bJSONObject\b
+\bscript language\b
+\bdemjson\b
+\brequire 'rubygems'\b
+\bActiveXObject\b
+\brequire 'json'\b
+\bXMLHttpRequest\b
